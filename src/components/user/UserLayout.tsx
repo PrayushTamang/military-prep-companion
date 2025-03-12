@@ -10,7 +10,8 @@ import {
   ChevronLeft, 
   ChevronRight, 
   LogOut,
-  Bell
+  Bell,
+  BookOpen
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from "@/components/ui/button";
@@ -37,6 +38,7 @@ export default function UserLayout({ children, title }: UserLayoutProps) {
     { path: '/dashboard/workouts', icon: <Dumbbell />, label: 'Workouts' },
     { path: '/dashboard/nutrition', icon: <Apple />, label: 'Nutrition' },
     { path: '/dashboard/progress', icon: <LineChart />, label: 'Progress' },
+    { path: '/dashboard/education', icon: <BookOpen />, label: 'Education' },
   ];
 
   const handleLogout = () => {
